@@ -10,6 +10,7 @@ app.use(express.static(path.join(__dirname, '/')));
 
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
 app.get('/',function(req, res){
+        console.log(req);
         res.sendFile(path.resolve( __dirname + '/index.html'))
          
 });
@@ -18,5 +19,5 @@ app.get('/',function(req, res){
 
 const port = process.env.WEB_PORT || 3001;
 const server = app.listen(port, console.log(`Listening on port ${port}`));
-module.expports=server;
+module.exports=server;
 

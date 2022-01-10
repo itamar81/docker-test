@@ -3,7 +3,7 @@
     "email": "b@rubble.com",
     "url": "http://barnyrubble.tumblr.com/",
     "dependencies": {
-        "express": "^4.17.1",
+        "express": "^4.17.2",
         "mongodb": "^4.2.2",
         "path": "^0.12.7"
     }
